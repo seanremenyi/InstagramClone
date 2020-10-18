@@ -42,6 +42,48 @@ Wireframes are shown below.
 
 ![](EditProfile.png)
 
+**Feed**
+
+This page will show latest pictures of people you follow. The format for pictures to scroll through will have the name of the profile who posted with their picture, underneath is the picture itself with an option to like or comment and if the user wants to see the profile, they can click on the name or the picture of the other user's profile above the picture. Underneath all that is the amount of likes and comments the picture has. Underneath that will be the description of the picture, then the first comment and the last comment. In between the two will be an option to expand and show all comments on a picture but the default will just show the first and last comment. There will be an option to just click the picture itself and expand it.
+
+The layout is also the same from ere on where the users profile picture and name will be shown at the top of the page.
+
+Wireframes are shown below.
+
+![](Feed.png)
+
+**Browse**
+
+This page will at first have some random pictures that the User can click on. There will also be a search bar. Once a search is made which will search keywords through the pictures and display pictures with the relevant keywords. This display format will greatly resemble the feed.
+
+Wireframes are shown below.
+
+![](Browse.png)
+
+**Clicking on a Picture**
+
+When clicking on a picture, The user will be take to a page that is just focused on the picture itself. This will include all the relevant buttons and descriptions described above. The Navigation will remain on the browse feature when on this page.
+
+Wireframes are shown below.
+
+![](ClickPicture.png)
+
+**Post**
+
+This page will be to upload a new picture. There will be all empty fields for the user to fill out and an option for the user to upload a pictures.
+
+Wireframes are Shown below.
+
+![](Post.png)
+
+**Notification**
+
+This page will list all notifications. This will show if one of the pictures received a like or a comment and if the profile is followed the user will see this in their notification page. This app doesn't send any sort of push notifications so this page wil be where all of this is shown.
+
+Wireframes are shown below
+
+![](Notifications.png)
+
 
 ## Trello Board
 
