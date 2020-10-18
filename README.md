@@ -16,7 +16,7 @@ This will take the User to a new page where they can create a profile name (this
 
 Below are the wireframes for both the mobile and desktop versions.
 
-![](Signin_Create.png)
+![](docs/Signin_Create.png)
 
 **Profile Page**
 
@@ -28,7 +28,7 @@ The overall layout for the pages will have a navigation bar listing what page th
 
 Wireframes are shown below.
 
-![](Profile.png)
+![](docs/Profile.png)
 
 **Edit Profile**
 
@@ -40,7 +40,7 @@ There will also be a delete profile option which the user can delete theyre prof
 
 Wireframes are shown below.
 
-![](EditProfile.png)
+![](docs/EditProfile.png)
 
 **Feed**
 
@@ -50,7 +50,7 @@ The layout is also the same from ere on where the users profile picture and name
 
 Wireframes are shown below.
 
-![](Feed.png)
+![](docs/Feed.png)
 
 **Browse**
 
@@ -58,7 +58,7 @@ This page will at first have some random pictures that the User can click on. Th
 
 Wireframes are shown below.
 
-![](Browse.png)
+![](docs/Browse.png)
 
 **Clicking on a Picture**
 
@@ -66,7 +66,7 @@ When clicking on a picture, The user will be take to a page that is just focused
 
 Wireframes are shown below.
 
-![](ClickPicture.png)
+![](docs/ClickPicture.png)
 
 **Post**
 
@@ -74,7 +74,7 @@ This page will be to upload a new picture. There will be all empty fields for th
 
 Wireframes are Shown below.
 
-![](Post.png)
+![](docs/Post.png)
 
 **Notification**
 
@@ -82,7 +82,7 @@ This page will list all notifications. This will show if one of the pictures rec
 
 Wireframes are shown below
 
-![](Notifications.png)
+![](docs/Notifications.png)
 
 
 ## Trello Board
