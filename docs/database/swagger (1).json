@@ -1,0 +1,208 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is my API documentation for an instagram clone I am building.",
+    "version": "1.0.0",
+    "title": "Instagram Clone"
+  },
+  "host": "igclone.example",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Profile",
+      "description": "Profile Endpoints"
+    },
+    {
+      "name": "Pictures",
+      "description": "Picture Endpoints"
+    },
+    {
+      "name": "Keywords",
+      "description": "Keyword Endpoints"
+    }
+  ],
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/username": {
+      "post": {
+        "tags": [
+          "Profile"
+        ],
+        "summary": "Create a new Profile",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Profile"
+        ],
+        "summary": "Update an existing Profile",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Profile not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Profile"
+        ],
+        "summary": "Retrive an existing Profile",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "404": {
+            "description": "Profile not found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Profile"
+        ],
+        "summary": "Delete an existing Profile",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "404": {
+            "description": "Profile not found"
+          }
+        }
+      }
+    },
+    "/username/pictures": {
+      "get": {
+        "tags": [
+          "Pictures"
+        ],
+        "summary": "Get all pictures from a profile",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/usernme/{PictureID}": {
+      "get": {
+        "tags": [
+          "Pictures"
+        ],
+        "summary": "Get picture",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid tag value"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Pictures"
+        ],
+        "summary": "Create picture post",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid tag value"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Pictures"
+        ],
+        "summary": "Update existing picture post",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid tag value"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Pictures"
+        ],
+        "summary": "Delete a picture post",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid tag value"
+          }
+        }
+      }
+    },
+    "/keywords": {
+      "get": {
+        "tags": [
+          "Keywords"
+        ],
+        "summary": "Get all pictures with keyword tag",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid ID supplied"
+          }
+        }
+      }
+    }
+  }
+}

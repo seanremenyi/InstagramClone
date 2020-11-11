@@ -129,7 +129,7 @@ QUESTIONS FOR BRUCE
 *Create/Put resources
 *Photos to a databse?
 *Get request for keywords
-
+*hows life?
 
 
 
