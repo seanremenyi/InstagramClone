@@ -7,10 +7,11 @@ These picture's can be tagged with keys to later search through. People can then
 
 ## Installing
 
-##### If using Ubuntu,
+##### Using Ubuntu,
 
-1. Create a new directory and cd into it
-2. Clone git repo
+1. Clone git repo
+2. Get into the directory
+    1.`cd InstagramClone`
 3. If not running python 3.8, run the following bash commands
     1. `sudo apt update`
     2. `sudo apt install python3.8`
@@ -22,9 +23,25 @@ These picture's can be tagged with keys to later search through. People can then
 5. Install the modules in requirements.txt
     1. `cd instagram-clone`
     2. `pip install -r requirements.txt`
-6. Run the Program
-    1. `cd src`
-    2. `python main.py`
+
+##### Setting up the Database using Postgres
+
+For configuration steps for postgres refer to Colin's guide on how to set up (the final section)
+
+[EC2 postgres sql guide](https://github.com/Ctrain68/EC2_postgres_sql_guide)
+
+##### Setting up Flask
+
+1. You'll need to set up the following environment variables
+    1.`export FLASK_APP=main.py`
+    2.`export FLASK_ENV=development`
+    3.`flask run`
+
+1. If using an EC2 instance you will eed to configure an inbound rule (refer to the guide above). However the rule will be for a custom TCP over port 8000 with ip address 0.0.0.0/0.
+2. You will have to add the following environment variable
+    1.`export FLASK_RUN_PORT=8000`
+3. Run flask with the following command
+    1.`-h 0.0.0.0`
 
 
 ## Layout
@@ -88,7 +105,7 @@ When clicking on a picture, The user will be take to a page that is just focused
 
 Wireframes are shown below.
 
-![](docs/wireframesClickPicture.png)
+![](docs/wireframes/ClickPicture.png)
 
 **Post**
 
@@ -96,7 +113,7 @@ This page will be to upload a new picture. There will be all empty fields for th
 
 Wireframes are Shown below.
 
-![](docs/wireframesPost.png)
+![](docs/wireframes/Post.png)
 
 **Notification**
 
@@ -106,6 +123,13 @@ Wireframes are shown below
 
 ![](docs/wireframes/Notifications.png)
 
+## Entity Relationship Diagram
+
+The database that the app will connect to will have 3 tables. One for the profile, one for pictures and one for comments.
+
+The following diagram shows the breakown of each table with its contraints and relations to other tables.
+
+![](docs/database/ERD.png)
 
 ## Trello Board
 
