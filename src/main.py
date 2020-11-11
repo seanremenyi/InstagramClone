@@ -130,6 +130,7 @@ QUESTIONS FOR BRUCE
 *Photos to a databse?
 *Get request for keywords
 *hows life?
+*did you have to send out like 36 emails?
 
 
 
