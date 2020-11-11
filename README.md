@@ -131,6 +131,14 @@ The following diagram shows the breakown of each table with its contraints and r
 
 ![](docs/database/ERD.png)
 
+## Endpoints
+
+docs/database contains  .yml and a .json version of the swagger format for API endpoints and is shown below. These will be the endpoints for the API.
+
+![](docs/database/IGendpoints.PNG)
+
+
+
 ## Trello Board
 
 https://trello.com/b/s5ovBbBQ/instagram
