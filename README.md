@@ -33,6 +33,7 @@ For configuration steps for postgres refer to Colin's guide on how to set up (th
 ##### Setting up Flask
 
 1. You'll need to set up the following environment variables
+    
     1.`export FLASK_APP=main.py`
     2.`export FLASK_ENV=development`
     3.`flask run`
